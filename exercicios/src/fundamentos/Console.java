@@ -45,6 +45,24 @@ public class Console {
 		 * e não o "println" igual foi usado nos exemplos acima 
 		 */
 		entrada.close(); // estou encerrando a entrada aberta lá em cima
+		
+		/*
+		 * Sempre que eu utilir um "nextInt" e depois for passar alguma informação através do "nextLine" 
+		 * preciso cocolar um "nextLine" a mais para ele pegar o (enter que vou dar)
+		 * EX:
+		 * 		 *
+		Scanner teclado = new Scanner(System.in);
+     		System.out.println("Qual a sua idade?");
+    		int idade = teclado.nextInt();
+    ******	teclado.nextLine(); //lê o "\\\\n" que o teclado.nextInt() deixa para trás.******
+    		System.out.println("Qual o seu nome?");
+    		String nome = teclado.nextLine();
+    		System.out.println("Qual o seu sobrenome?");
+    		String sobrenome = teclado.nextLine();
+ 
+    		teclado.close();
+		 * 
+		 */
 	}
 
 }
